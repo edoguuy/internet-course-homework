@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MR Edo Gai</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Edo Gai</h1>
+      <p>Third-year student at Ruppin with experience in C# and Python.</p>
+     </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Main</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="notes.html">Notes</a></li>
+      </ul>
+     </nav>
+
+    <main>
+      <section>
+        <h2>About me</h2>
+        <img src="./images/edo-gai-portrait.jpeg" alt="Portrait of Edo Gai" width="240" height="240">
+        <p>My name is Edo Gai. I am a third-year student at Ruppin Academic Center. I have experience with C# and Python, and I am learning HTML and CSS to build websites.</p>
+      </section>
+
+      <table>
+        <caption>What I am learning</caption>
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Day</th>
+            <th scope="col">Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Front-End Web Developer</th>
+            <td>Tuesday</td>
+            <td>Lab 3</td>
+          </tr>
+          <tr>
+            <th scope="row">Databases</th>
+            <td>Wednesday</td>
+            <td>301</td>
+          </tr>
+          <tr>
+            <th scope="row">Statistics for Information Systems</th>
+            <td>Thursday</td>
+            <td>210</td>
+          </tr>
+        </tbody>
+      </table>
+
+        <form method="get">
+          <fieldset>
+            <legend>Your details</legend>
+            <p><label for="full-name">Full name</label> <input type="text" id="full-name" name="full-name" required></p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="MrEdoGai@gmail.com" required aria-describedby="email-hint">
+            </p>
+            <p id="email-hint">Enter a valid email address.</p>
+            <p><label for="phone">Phone</label> <input type="tel" id="phone" name="phone"></p>
+          </fieldset>
+          <fieldset>
+            <legend>Membership</legend>
+            <p><input type="radio" id="member-student" name="membership" value="student" checked> <label for="member-student">Student</label></p>
+            <p><input type="radio" id="member-staff" name="membership" value="staff"> <label for="member-staff">Staff</label></p>
+          </fieldset>
+          <p><label for="message">Message</label> <textarea id="message" name="message" rows="3"></textarea></p>
+          <button type="submit">Send</button>
+        </form>
+
+
+
+     </main>
+
+
+    <footer>
+      <p>Created by Edo Gai, 2026.</p>
+    </footer>
+  </body>
+</html>
