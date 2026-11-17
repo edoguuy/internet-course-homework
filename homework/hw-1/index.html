@@ -3,84 +3,94 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>MR Edo Gai</title>
+    <title>Edo Gai</title>
     <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <header>
-      <h1>Edo Gai</h1>
-      <p>Third-year student at Ruppin with experience in C# and Python.</p>
-     </header>
-
     <nav>
       <ul>
         <li><a href="index.html" aria-current="page">Main</a></li>
-        <li><a href="about.html">About me</a></li>
+        <li><a href="about.html">About Me</a></li>
         <li><a href="notes.html">Notes</a></li>
       </ul>
-     </nav>
+    </nav>
+
+    <header>
+      <h1>Edo Gai</h1>
+      <p>From leadership and operations to engineering and technology.</p>
+    </header>
 
     <main>
-      <section>
-        <h2>About me</h2>
-        <img src="./images/edo-gai-portrait.jpeg" alt="Portrait of Edo Gai" width="240" height="240">
-        <p>My name is Edo Gai. I am a third-year student at Ruppin Academic Center. I have experience with C# and Python, and I am learning HTML and CSS to build websites.</p>
+      <section class="card">
+        <h2>Who I Am</h2>
+        <img class="avatar" src="./images/edo-gai-portrait.jpeg" alt="Portrait of Edo Gai" width="240" height="240">
+        <p>Hi, I'm Edo, a third-year Industrial Engineering and Management student at Ruppin Academic Center.</p>
+        <p>Before starting my studies, I served as an officer in the IDF and worked as an Operations Manager in the ski tourism industry in France.</p>
+        <p>These experiences gave me a strong background in leadership, teamwork, and solving problems.</p>
+        <p>Today, I'm interested in combining my management experience with technology, programming, and artificial intelligence.</p>
+        <p>I created this website to share a little about myself, my professional background, and my experience in the ski industry.</p>
+        <p>You can learn more about my background on the <a href="about.html">About Me page</a> and read about my ski experience on the <a href="notes.html">Notes page</a>.</p>
       </section>
 
       <table>
-        <caption>What I am learning</caption>
+        <caption>My journey so far</caption>
         <thead>
           <tr>
-            <th scope="col">Course</th>
-            <th scope="col">Day</th>
-            <th scope="col">Room</th>
+            <th scope="col">Period</th>
+            <th scope="col">Role</th>
+            <th scope="col">Where</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">Front-End Web Developer</th>
-            <td>Tuesday</td>
-            <td>Lab 3</td>
+            <th scope="row">2017–2021</th>
+            <td>Research Officer, then Deputy Intelligence Officer (Captain)</td>
+            <td>IDF, Northern Command and an armored brigade</td>
           </tr>
           <tr>
-            <th scope="row">Databases</th>
-            <td>Wednesday</td>
-            <td>301</td>
+            <th scope="row">2021–2022</th>
+            <td>Company Representative</td>
+            <td>Pingwin Ski, Tignes, France</td>
           </tr>
           <tr>
-            <th scope="row">Statistics for Information Systems</th>
-            <td>Thursday</td>
-            <td>210</td>
+            <th scope="row">2022–2024</th>
+            <td>Operations Manager</td>
+            <td>Pingwin Ski, France</td>
+          </tr>
+          <tr>
+            <th scope="row">2023</th>
+            <td>Volunteer team leader</td>
+            <td>School renovation, Nepal</td>
+          </tr>
+          <tr>
+            <th scope="row">Today</th>
+            <td>Industrial Engineering and Management student</td>
+            <td>Ruppin Academic Center</td>
           </tr>
         </tbody>
       </table>
 
-        <form method="get">
-          <fieldset>
-            <legend>Your details</legend>
-            <p><label for="full-name">Full name</label> <input type="text" id="full-name" name="full-name" required></p>
-            <p>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="MrEdoGai@gmail.com" required aria-describedby="email-hint">
-            </p>
-            <p id="email-hint">Enter a valid email address.</p>
-            <p><label for="phone">Phone</label> <input type="tel" id="phone" name="phone"></p>
-          </fieldset>
-          <fieldset>
-            <legend>Membership</legend>
-            <p><input type="radio" id="member-student" name="membership" value="student" checked> <label for="member-student">Student</label></p>
-            <p><input type="radio" id="member-staff" name="membership" value="staff"> <label for="member-staff">Staff</label></p>
-          </fieldset>
-          <p><label for="message">Message</label> <textarea id="message" name="message" rows="3"></textarea></p>
-          <button type="submit">Send</button>
-        </form>
-
-
-
-     </main>
-
+      <form method="get">
+        <fieldset>
+          <legend>Contact me</legend>
+          <p><label for="full-name">Full name</label> <input type="text" id="full-name" name="full-name" required></p>
+          <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required aria-describedby="email-hint">
+          </p>
+          <p id="email-hint">Enter a valid email address.</p>
+          <p><label for="phone">Phone</label> <input type="tel" id="phone" name="phone"></p>
+        </fieldset>
+        <fieldset>
+          <legend>I'm contacting you about</legend>
+          <p><input type="radio" id="topic-work" name="topic" value="work" checked> <label for="topic-work">Work</label></p>
+          <p><input type="radio" id="topic-studies" name="topic" value="studies"> <label for="topic-studies">Studies</label></p>
+        </fieldset>
+        <p><label for="message">Message</label> <textarea id="message" name="message" rows="3"></textarea></p>
+        <button type="submit">Send</button>
+      </form>
+    </main>
 
     <footer>
       <p>Created by Edo Gai, 2026.</p>
