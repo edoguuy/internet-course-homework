@@ -298,17 +298,22 @@ gap: var(--space-5);
    ══════════════════════════════════════════════════════════════════════════════ */
 
 .hero {
-  /* CODE HERE — 4.1a: the base, stacked. */
+  display: grid;
+  gap: var(--space-6);
+  align-items: center;
 }
 
-/* CODE HERE — 4.1b: the breakpoint where it becomes two columns. */
+@media (min-width: 48em){
+  .hero{
+    grid-template-columns:minmax(0, 1.1fr) minmax(0,0.9fr);
+  }
+}
 
 h1 {
   margin: 0 0 var(--space-3);
   line-height: 1.08;
   letter-spacing: -0.01em;
-
-  /* CODE HERE — 4.2 */
+  font-size: clamp(1.9rem, 1rem + 3vw, 3.2rem);
 }
 
 .lede {
@@ -320,8 +325,9 @@ h1 {
 
 .actions {
   margin: 0;
-
-  /* CODE HERE — 4.3 */
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
 }
 
 .button {
@@ -348,7 +354,8 @@ h1 {
   width: 100%;
   border-radius: var(--radius-lg);
 
-  /* CODE HERE — 4.4 */
+  aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 /* ══════════════════════════════════════════════════════════════════════════════
